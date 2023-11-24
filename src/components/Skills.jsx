@@ -2,27 +2,16 @@ import React from "react";
 
 const Skills = () => {
   const skills = [
-    {
-      logo: "logo-html5",
-      level: "Advance",
-      count: 86,
-    },
-    {
-      logo: "logo-css3",
-      level: "Expect",
-      count: 90,
-    },
-    {
-      logo: "logo-nodejs",
-      level: "Beginner",
-      count: 40,
-    },
-    {
-      logo: "logo-react",
-      level: "Intermediate",
-      count: 80,
-    },
+    { logo: "logo-html5", level: "HTML", count: 86 },
+    { logo: "logo-html5", level: "CSS", count: 86 },
+    { logo: "logo-javascript", level: "JavaScript", count: 86 },
+    { logo: "logo-python", level: "Python", count: 90 },
+    { logo: "logo-nodejs", level: "Node Js", count: 40 },
+    { logo: "logo-react", level: "React", count: 80 },
+    { logo: "logo-react", level: ".NET", count: 80 },
+    { logo: "logo-react", level: "Postgree SQL", count: 80 },
   ];
+
   return (
     <section id="skills" className="py-10 bg-gray-800 relative">
       <div className="mt-8 text-gray-100 text-center">
@@ -34,19 +23,23 @@ const Skills = () => {
           {skills?.map((skill, i) => (
             <div
               key={i}
-              className="border-2 group border-cyan-600 relative min-w-[10rem] max-w-[16rem] bg-gray-900 p-10 rounded-xl"
+              className="w-full md:w-1/2 lg:w-1/5 p-4"
             >
               <div
-                style={{
-                  background: `conic-gradient(rgb(8,145,170) ${skill.count}%,#ddd ${skill.count}%)`,
-                }}
-                className="w-32 h-32 flex items-center justify-center rounded-full"
+                className="border-2 group border-cyan-600 relative min-w-[10rem] max-w-[15rem] bg-gray-900 p-12 rounded-xl"
               >
-                <div className="text-6xl w-28 h-28 bg-gray-900 rounded-full flex items-center justify-center group-hover:text-cyan-600">
-                  <ion-icon name={skill.logo}></ion-icon>
+                <div
+                  style={{
+                    background: `conic-gradient(rgb(8,145,170) ${skill.count}%,#ddd ${skill.count}%)`,
+                  }}
+                  className="w-32 h-32 flex items-center justify-center rounded-full"
+                >
+                  <div className="text-6xl w-28 h-28 bg-gray-900 rounded-full flex items-center justify-center group-hover:text-cyan-600">
+                    <ion-icon name={skill.logo}></ion-icon>
+                  </div>
                 </div>
+                <p className="text-xl mt-3">{skill.level}</p>
               </div>
-              <p className="text-xl mt-3">{skill.level}</p>
             </div>
           ))}
         </div>

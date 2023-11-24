@@ -1,5 +1,6 @@
 import React from "react";
 import hero from "../assets/images/mc.png";
+
 const Hero = () => {
   const social_media = [
     "logo-instagram",
@@ -7,13 +8,19 @@ const Hero = () => {
     "logo-linkedin",
     "logo-twitter",
   ];
+
   return (
     <section
       id="home"
       className="min-h-screen flex py-10 md:flex-row flex-col items-center"
     >
       <div className="flex-1 flex items-center justify-center h-full">
-        <img src={hero} alt="" className="md:w-11/12 h-full object-cover" />
+        <img
+          src={hero}
+          alt=""
+          className="md:w-2/3 h-full object-cover"
+          style={{ objectFit: "cover" }}
+        />
       </div>
       <div className="flex-1">
         <div className="md:text-left text-center">

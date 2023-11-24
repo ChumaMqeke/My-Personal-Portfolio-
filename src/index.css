@@ -32,3 +32,16 @@ textarea {
 ::selection {
   @apply bg-cyan-600;
 }
+
+.contact-button {
+  background-color: #1eb5cf; /* Change to your desired background color */
+  color: #fff; /* Change to your desired text color */
+  padding: 8px 16px; /* Adjust padding as needed */
+  border-radius: 4px; /* Adjust border-radius as needed */
+  text-decoration: none; /* Remove underlines for links */
+  display: inline-block; /* Ensure the button behaves as a block element */
+}
+
+.contact-button:hover {
+  background-color: #77faff; /* Change to your desired hover background color */
+}
