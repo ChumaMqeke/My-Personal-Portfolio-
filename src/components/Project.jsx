@@ -1,9 +1,9 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import project1 from "../assets/images/project-1.png";
-import project2 from "../assets/images/project-2.jpg";
-import project3 from "../assets/images/project-3.jpg";
-import project4 from "../assets/images/project-4.jpg";
+import project2 from "../assets/images/project-2.png";
+import project3 from "../assets/images/project-3.png";
+import project4 from "../assets/images/project-4.png";
 import project5 from "../assets/images/project-5.png";
 import project_person from "../assets/images/ca.png";
 import "swiper/css";
@@ -12,38 +12,38 @@ import { Pagination, Autoplay } from "swiper";
 
 const Project = () => {
   const projects = [
-  /*  {
+    {
       img: project1,
-      name: "Movie App",
-      github_link: "https://github.com/Sridhar-C-25",
-      live_link: "https://myreactflix.netlify.app",
+      name: "JavaScrip & HTML Website",
+      github_link: " ",
+      live_link: " ",
     },
     {
       img: project2,
-      name: "Job search Web App",
-      github_link: "https://github.com/Sridhar-C-25/jobsearchapp",
-      live_link: "https://myjobsearch.netlify.app",
+      name: "Python Banking App",
+      github_link: " ",
+      live_link: " ",
     },
     {
       img: project3,
-      name: "Highking",
-      github_link: "https://github.com/Sridhar-C-25/highking",
-      live_link: "https://highking01.netlify.app",
+      name: "Portfolio",
+      github_link: " ",
+      live_link: " ",
     },
     {
       img: project4,
-      name: "React Nav",
+      name: "JavaScript Typing Game",
       github_link:
-        "https://github.com/Sridhar-C-25/reacttailwindnavbar-with-dropdown",
-      live_link: "https://reacttailwindnavbar.netlify.app",
+        " ",
+      live_link: " ",
     },
-    {
+   /* {
       img: project5,
       name: "Vue Country",
-      /*github_link: "https://github.com/Sridhar-C-25",
+      github_link: "https://github.com/Sridhar-C-25",
       live_link: "https://vuecountry05.netlify.app",
-    },
- */ ];
+    },*/
+  ];
   return (
     <section id="projects" className="py-10 text-white">
       <div className="text-center">
