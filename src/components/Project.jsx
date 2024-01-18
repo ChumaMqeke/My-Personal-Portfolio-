@@ -16,7 +16,7 @@ const Project = () => {
       img: project1,
       name: "JavaScrip & HTML Website",
       github_link: " ",
-      live_link: " ",
+      live_link: "https://rainbow-fudge-46fcab.netlify.app/#",
     },
     {
       img: project2,
@@ -35,7 +35,7 @@ const Project = () => {
       name: "JavaScript Typing Game",
       github_link:
         " ",
-      live_link: " ",
+      live_link: "https://rainbow-fudge-46fcab.netlify.app/#",
     },
    /* {
       img: project5,
