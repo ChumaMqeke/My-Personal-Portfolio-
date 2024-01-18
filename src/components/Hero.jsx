@@ -2,12 +2,20 @@ import React from "react";
 import hero from "../assets/images/mc.png";
 
 const Hero = () => {
-  const social_media = [
-    "logo-instagram",
-    "logo-facebook",
-    "logo-linkedin",
-    "logo-twitter",
-  ];
+  const socialMediaLinks = {
+    instagram: "https://www.instagram.com/your_instagram_username/",
+    facebook: "https://www.facebook.com/your_facebook_username/",
+    linkedin: "https://www.linkedin.com/feed/",
+    github: "https://github.com/ChumaMqeke",
+  };
+
+  const contactClick = () => {
+    // Scroll to the contacts section
+    const contactsSection = document.getElementById("contact");
+    if (contactsSection) {
+      contactsSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   return (
     <section
@@ -32,17 +40,16 @@ const Hero = () => {
             My Name is <span>Chuma Mqeke</span>
           </h1>
           <h4 className="md:text-2xl text-lg md:leading-normal leading-5 mt-4 font-bold text-gray-600">
-            Fullstack Developer
+            Junior Software Developer
           </h4>
-          <button className="btn-primary mt-8">Contact Me</button>
+          <button className="btn-primary mt-8" onClick={contactClick}>Contact Me</button>
           <div className="mt-8 text-3xl flex items-center md:justify-start justify-center gap-5">
-            {social_media?.map((icon) => (
-              <div
-                key={icon}
-                className="text-gray-600 hover:text-white cursor-pointer "
-              >
-                <ion-icon name={icon}></ion-icon>
-              </div>
+            {Object.entries(socialMediaLinks).map(([platform, link]) => (
+              <a key={platform} href={link} target="_blank" rel="noopener noreferrer">
+                <div className="text-gray-600 hover:text-white cursor-pointer">
+                  <ion-icon name={`logo-${platform}`}></ion-icon>
+                </div>
+              </a>
             ))}
           </div>
         </div>
